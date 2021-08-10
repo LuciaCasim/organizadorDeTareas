@@ -22,18 +22,18 @@ const myKey = "d2f51c3b5f9ab0da898d46012c4c6c30";
 
 
 
-// Manipulacion de la data del clima y localización
-// const climaLocalizacion = (_data) => {
-//   usuario.ubicacion = `${_data.name}, ${_data.sys.country}`
-//   $("#location").text(usuario.ubicacion)
-//   $("#tareas__header__fechaClima").append(
-//     `<div id="clima">
-//       <img id="iconoClima" src="http://openweathermap.org/img/wn/${_data.weather[0].icon}.png" alt="Icono del clima">
-//       <p>${(Math.round(_data.main.temp * 10) / 10)}°</p>
-//     </div>
-//     `
-//   )
-// }
+Manipulacion de la data del clima y localización
+const climaLocalizacion = (_data) => {
+  usuario.ubicacion = `${_data.name}, ${_data.sys.country}`
+  $("#location").text(usuario.ubicacion)
+  $("#tareas__header__fechaClima").append(
+    `<div id="clima">
+      <img id="iconoClima" src="http://openweathermap.org/img/wn/${_data.weather[0].icon}.png" alt="Icono del clima">
+      <p>${(Math.round(_data.main.temp * 10) / 10)}°</p>
+    </div>
+    `
+  )
+}
 
 
 //Fecha y hora
