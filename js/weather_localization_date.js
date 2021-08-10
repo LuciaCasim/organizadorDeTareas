@@ -22,7 +22,7 @@ const myKey = "d2f51c3b5f9ab0da898d46012c4c6c30";
 
 
 
-Manipulacion de la data del clima y localización
+// Manipulacion de la data del clima y localización
 const climaLocalizacion = (_data) => {
   usuario.ubicacion = `${_data.name}, ${_data.sys.country}`
   $("#location").text(usuario.ubicacion)
